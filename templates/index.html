@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Голос Глубинки</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Пространство для диалога</h1> <div class="categories-grid">
+        <a href="{{ url_for('category_topics', cat_name='Спорт и Волочкова') }}" class="card">
+            <p>Спорт и Волочкова</p>
+        </a>
+
+        <a href="{{ url_for('category_topics', cat_name='Музыка и Макан') }}" class="card">
+            <p>Музыка и Макан</p>
+        </a>
+
+        <a href="{{ url_for('category_topics', cat_name='Стримеры и Полковник') }}" class="card">
+            <p>Стримеры и Полковник</p>
+        </a>
+
+        <a href="{{ url_for('category_topics', cat_name='Мужская логика и Маркарян') }}" class="card">
+            <p>Мужская логика и Маркарян</p>
+        </a>
+
+        <a href="{{ url_for('category_topics', cat_name='Женская логика и Кисова') }}" class="card">
+            <p>Женская логика и Кисова</p>
+        </a>
+
+        <a href="{{ url_for('category_topics', cat_name='Бизнес и Эпштейн') }}" class="card">
+            <p>Бизнес и Эпштейн</p>
+        </a>
+    </div>
+{% endblock %}
